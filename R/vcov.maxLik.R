@@ -1,5 +1,5 @@
 ## maxLik
-vcov.maxLik <- function(object, eigentol=1e-20, ...) {
+vcov.maxLik <- function(object, eigentol=1e-32, ...) {
    ## if exists $varcovar, take it
    if(!is.null(object$varcovar))
        return(object$varcovar)
